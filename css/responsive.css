@@ -1,0 +1,184 @@
+/* responsive view */
+
+:root {
+	/* color */
+	--basic: #ffffff;
+	--dark: #121212;
+	--main: #f0146c;
+	--secondary: #5c5c5c;
+	--base: #cfcfcf;
+}
+/* media query responsive */
+/* view tablet */
+@media screen and (max-width: 850px) {
+   
+   /* navbar */
+   .navbar {
+      width: 50%;
+   }
+
+   /* end navbar */
+
+   /* footer */
+
+   footer {
+      font-size: smaller;
+   }
+
+
+
+
+
+
+
+
+
+
+}
+
+/* media query responsive */
+/* view smartphone */
+@media screen and (max-width: 500px) {
+   
+   /* navbar */
+
+   .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease-in-out .5s;
+      transform: translateY(100%);
+   }
+
+   .navbar.show {
+      background: rgba(0,0,0, .7);
+      transform: translateY(0);
+   }
+
+   .navbar ul {
+      width: 300px;
+      background-color: var(--basic);
+      flex-direction: column;
+      box-shadow: 6px 6px 20px rgba(32, 32, 32, .5);
+      border-radius: 8px;
+      opacity: 0;
+      position: relative;
+      z-index: 1;
+      transform: translateY(10px);
+      transition: all .3s ease-in-out;
+   }
+
+   .navbar ul.show {
+      opacity: 1;
+      transform: translateY(0);
+   }
+
+   .navbar ul li {
+      width: 100%;
+      font-size: 1.2rem;
+   }
+
+   .navbar ul li a {
+      display: block;
+      width: 100%;
+      padding: 1em;
+      transition: .3s ease-in-out;
+      color: var(--dark);
+   }
+
+   .hamBtn {display: flex;}
+
+   .hambtn span {
+      background-color: var(--dark);
+   }
+
+   /* end nav */
+
+   /* jumbotron */
+
+   .headline .load__welcome {
+      width: 100%;
+      position: absolute;
+   }
+
+   /* end jumbotron */
+
+   /* hero showcase */
+
+   #hero {
+      height: 400px;
+      text-align: center;
+   }
+
+   #hero svg {
+      width: 500px;
+   }
+
+   #hero .row .col {
+      justify-content: center !important;
+   }
+
+
+   /* end hero showcase */
+
+
+
+
+   /* about */
+
+   #about p{
+      font-size: smaller;
+   }
+
+   .task ul li {
+      flex-wrap: wrap;
+   }
+
+   /* end about */
+
+   /* highlight */
+
+   #highlight .row .col {
+      flex: 0 0 100%;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+
+   /* end highlight */
+
+   /* footer */
+
+   footer {
+      font-size: smaller;
+      text-align: center;
+   }
+
+   footer .col:last-child {
+      text-align: center;
+   }
+
+   footer .col:last-child ul {
+      justify-content: center;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
